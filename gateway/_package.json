@@ -1,0 +1,7 @@
+{
+  "name": "Gateway",
+  "version": "4.0.0",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {}
+}

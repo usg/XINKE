@@ -1,0 +1,56 @@
+@import '~antd/es/style/themes/default.less';
+
+// 添加/修改 gateway 模态框
+.updateModal {
+  height: calc(100% - 176px);
+  :global {
+    .ant-form-horizontal {
+      .ant-row.ant-form-item {
+        margin-bottom: 16px;
+      }
+    }
+    .ant-modal-content {
+      height: 100%;
+      min-height: 500px;
+      .ant-modal-body {
+        height: calc(100% - 120px);
+        form {
+          height: 100%;
+        }
+      }
+      .ant-modal-footer {
+        padding: 16px 24px;
+      }
+    }
+  }
+  .updateForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    .updateMap {
+      display: inline-block;
+      width: calc(100% - 348px);
+      padding: 16px 24px 0;
+    }
+    .updateItem {
+      display: inline-block;
+      width: 348px;
+      max-height: 100%;
+      padding: 16px 24px 0;
+      overflow-y: auto;
+      border-left: 1px solid #ddd;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xxl) {
+  .updateModal {
+    height: calc(100% - 48px);
+    &:global(.ant-modal) {
+      top: 48px;
+      padding-bottom: 8px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import '~antd/es/style/themes/default.less';
+
+// 表格样式
+.standardTable {
+  .input {
+    width: 292px;
+  }
+  // overflow: hidden;
+  .radioButton {
+    display: inline-block;
+  }
+  .dropdownButton {
+    display: none;
+  }
+  :global {
+    .ant-table-body {
+      overflow: auto !important;
+    }
+    .ant-table-body-inner {
+      overflow-y: auto !important;
+    }
+    // 分页样式
+    .ant-table-pagination {
+      margin-top: 24px;
+    }
+  }
+}

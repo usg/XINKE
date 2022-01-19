@@ -1,0 +1,60 @@
+@import '~antd/es/style/themes/default.less';
+
+// OTA 模态框
+.otaModal {
+  :global {
+    .ant-form-horizontal {
+      .ant-row.ant-form-item {
+        margin-bottom: 16px;
+      }
+      .ant-row.ant-form-item:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .ant-modal-content {
+      min-height: 300px;
+      .ant-modal-body {
+        overflow: auto;
+      }
+      .ant-modal-footer {
+        padding: 16px 24px;
+      }
+    }
+  }
+}
+
+// OTA样式
+.uploadSoftware {
+  cursor: pointer;
+  :global {
+    .ant-upload-list {
+      display: none !important;
+    }
+  }
+}
+
+//操作成功样式
+.done {
+  :global {
+    .ant-result-content {
+      margin-top: 8px;
+      padding: 8px 24px;
+    }
+    div.ant-typography {
+      max-height: 160px;
+      overflow-y: auto;
+      .ant-tag-magenta {
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xxl) {
+  .otaModal {
+    &:global(.ant-modal) {
+      top: 48px;
+      padding-bottom: 8px;
+    }
+  }
+}
