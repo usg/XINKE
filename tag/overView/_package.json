@@ -1,0 +1,9 @@
+{
+  "name": "TagOverview",
+  "version": "1.0.8",
+  "private": true,
+  "dependencies": {
+    "xlsx": "^0.16.0"
+  },
+  "devDependencies": {}
+}

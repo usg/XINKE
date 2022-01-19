@@ -1,0 +1,20 @@
+@import '~antd/es/style/themes/default.less';
+
+// Tag 编辑模态框控制
+.updateModal{
+  :global{
+    .ant-modal-footer {
+      padding: 16px 24px;
+    }
+  }
+}
+
+
+@media screen and (max-width: @screen-xxl) {
+  .updateModal {
+    &:global(.ant-modal) {
+      top: 48px;
+      padding-bottom: 8px;
+    }
+  }
+}

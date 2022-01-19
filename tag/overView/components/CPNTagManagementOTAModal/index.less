@@ -1,0 +1,19 @@
+@import '~antd/es/style/themes/default.less';
+
+// Tag OTA模态框控制
+.otaModal{
+  :global{
+    .ant-modal-footer {
+      padding: 16px 24px;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xxl) {
+  .otaModal {
+    &:global(.ant-modal) {
+      top: 48px;
+      padding-bottom: 8px;
+    }
+  }
+}

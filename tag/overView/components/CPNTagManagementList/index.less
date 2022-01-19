@@ -1,0 +1,72 @@
+@import '~antd/es/style/themes/default.less';
+// 搜索输入框样式
+.searchInput {
+  width: 200px;
+}
+
+// 表格样式
+.standardTable {
+  width: 100%;
+  height: calc(100% - 80px);
+  :global {
+    .ant-table-placeholder {
+      border-bottom: 0;
+    }
+    .ant-form-item{
+      margin-right: 8px;
+    }
+  }
+}
+
+// table 列控制
+.columnsCtr{
+  // border:1px solid red;
+}
+
+// 表格控制
+&.auto-scroll-y {
+  height: 100%;
+  .ant-spin-nested-loading,
+  .ant-spin-container,
+  .ant-table,
+  .ant-table-scroll,
+  .ant-table-body-inner,
+  .ant-table-fixed-left,
+  .ant-table-content {
+    height: 100%;
+  }
+  .ant-table-content {
+    position: relative;
+  }
+  .ant-table-body,
+  .ant-table-body-inner {
+    overflow-y: auto !important;
+  }
+  .ant-table-header {
+    overflow-y: hidden !important;
+  }
+  .ant-table-body {
+    height: calc(100% - 27px);
+  }
+  .ant-table-body-outer {
+    height: calc(100% - 27px);
+  }
+  .ant-table-body-inner {
+    overflow-x: hidden;
+  }
+}
+.tagInputSearch{
+  padding-left: 8px;
+  background-color: #fff;
+}
+
+//搜索按钮控制
+.searchBtn{
+  margin-top: 4px;
+  margin-right: 8px;
+}
+
+// 操作数据按钮
+.actionButton{
+  display:inline-block;
+}

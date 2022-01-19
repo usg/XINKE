@@ -1,0 +1,86 @@
+@import '~antd/es/style/themes/default.less';
+
+// 上传Excel样式
+.modalImport {
+  cursor: pointer;
+  :global {
+    .ant-form-item{
+      margin-bottom: 6px !important;
+    }
+    .ant-modal-header{
+      background-color: #f5f5f5;
+      border-bottom:0;
+    }
+    .ant-upload-list {
+      display: none !important;
+    } 
+    .ant-tabs-bar {
+      border: none !important;
+
+    }
+    .ant-form-item-control {
+      line-height: 22px;
+      
+    }
+    .ant-modal-body {
+      padding-top: 0 !important;
+    }
+    .ant-table {
+      height: 380px;
+      margin-left:16px;
+    }
+    .ant-table-tbody > tr > td {
+      padding: 8px 8px;
+    }
+    .ant-form-explain {                     // 控制修改excel验证信息
+      position: absolute;
+      z-index: 10000;
+      width: 200px;
+    }
+    .ant-table-tbody{
+      .my-cell-td{
+        .ant-checkbox{
+          margin-left: 6px;
+        }
+        padding-left: 16px;
+      }
+    }
+  }
+
+  .dotCircle {
+    float:left;
+    width:6px; 
+    height:6px;
+    margin-top:8px;
+    margin-right:8px;
+    margin-left:16px;
+    background-color:#1890ff;
+    border-radius:50%
+  }
+  .uploadExcelBtn{
+    margin-left: 6px;
+    padding: 3px 8px ;
+    border:1px solid #ddd;
+  }
+  .textRow {
+    height: 34px;
+    font-size: 14px;
+  }
+  .rowRed{
+    background-color:#F5A89A;
+  }
+  .footerAction {                     
+    float:right;
+    margin-top:16px;
+  }
+}
+
+
+@media screen and (max-width: @screen-xxl) {
+  .modalImport {
+    &:global(.ant-modal) {
+      top: 48px;
+      padding-bottom: 8px;
+    }
+  }
+}
